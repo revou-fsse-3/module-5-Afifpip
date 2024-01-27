@@ -1,14 +1,13 @@
-import { Card } from "@/components";
-import Layout from "@/layouts";
+import { Card } from "../../components";
+import Layout from "../../layouts";
 import Head from "next/head";
 import axios from "axios"
 import Link from "next/link";
+import React from "react";
 
 interface Post {
-  id: number;
   name: string;
-  height: number;
-  weight: number;
+  url: string;
 }
 
 interface Props {
@@ -29,26 +28,23 @@ const PostIndex = ({ posts }: Props) => {
         <table>
           <thead>
             <tr>
-              <th>IDdas</th>
-              <th>Namfasfde</th>
+              <th>ID</th>
+              <th>Name</th>
               <th>Height</th>
               <th>Weight</th>
             </tr>
           </thead>
           <tbody>
-            {/* {posts?.map((post) => (
-              <tr key={post.id}>
-                <td>{post.id}</td>
+            {posts?.map((post) => (
+              <tr key={post.name}>
+                
                 <td>{post.name}</td>
-                <td>{post.height}</td>
-                <td>{post.weight}</td>
-                <td>
-                  <Link passHref href={`/post/${post.id}`}>
-                    {'EDIT'}
-                  </Link>
+                <td>{post.url}</td>
+                
+                <td>                
                 </td>
               </tr>
-            ))} */}
+            ))}
           </tbody>
         </table>
       </Card>

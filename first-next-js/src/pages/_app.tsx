@@ -33,6 +33,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <>
         <Head>
           <title>{'Next JS'}</title>
+          
         </Head>
         <Component {...pageProps} />
       </>

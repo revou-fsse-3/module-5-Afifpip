@@ -1,4 +1,5 @@
-import { Navbar } from "@/components";
+import { Navbar } from "../components";
+import React from "react";
 import { ReactNode } from "react";
 
 interface Props {

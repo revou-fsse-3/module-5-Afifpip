@@ -2,10 +2,9 @@ import Link from "next/link"
 import Button from "../Button"
 import Input from "../Input"
 import { useNavigate } from "react-router-dom"
+import React from "react"
 
 const Navbar = () => {
-
-  // const navigate = useNavigate();
 
   return (
     <div className="max-w-2xl mx-auto mt-2">
